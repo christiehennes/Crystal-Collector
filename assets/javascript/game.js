@@ -29,6 +29,7 @@ let game = {
 
         this.generateTargetNumber();
         this.generateCrystals();
+        this.displayWins();
 
 
     },
@@ -75,6 +76,14 @@ let game = {
         }
 
     },
+
+    displayWins: function(){
+
+        $("#wins").html("Wins: " + this.wins);
+        $("#losses").html("Losses: " + this.losses);
+
+
+    }
 
 
 
