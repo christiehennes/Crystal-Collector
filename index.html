@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 <body>
 
     <div class="body-wrapper">
-        <div class="title">Title Goes Here</div>
-        <div class="instructions">Place instructions here</div>
-        <div class="to-guess-wrapper">
-            <div>Number to Guess</div>
-            <div id="number-to-guess"></div>
-        </div>
-        <div id="crystals"></div>
-        <div id="score-wrapper">
-            <div>Score:</div>
-            <div id="current-score"></div>
-        </div>
-        <div id="wins-wrapper">
+
+        <div class="game-wrapper">
+            <div class="title">Title Goes Here</div>
+            <div class="instructions">Place instructions here</div>
+
+            <div class="scores-wrapper">
+                <div class="scores">
+                    <div>Number to Guess</div>
+                    <div id="number-to-guess"></div>
+
+                </div>
+                <div id="scores">
+                    <div>Score:</div>
+                    <div id="current-score"></div>
+                </div>
+            </div>
+            <div class="crystals-wrapper">
+                <div id="crystals"></div>
+            </div>
+            
+            <div id="wins-wrapper">
                 <div id="wins"></div>
                 <div id="losses"></div>
             </div>
+        </div>
 
     </div>
     

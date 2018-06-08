@@ -1,3 +1,47 @@
+
+.body-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    max-width:960px;
+
+}
+
+.game-wrapper{
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.scores{
+    margin: 10px;
+
+}
+
+.crystals-wrapper{
+
+    max-width: 350px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
 .crystal-image {
-    max-width: 200px;
+    max-width: 150px;
+    margin: 10px;
 }
