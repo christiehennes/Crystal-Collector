@@ -53,14 +53,13 @@ let game = {
             let image = $("<img>");
             image.addClass("crystal-image");
 
-            // Each imageCrystal will be given a src link to the crystal image
+            //Each imageCrystal will be given a src link to the crystal image
             image.attr("src", this.crystalImages[i]);
 
-            // Each imageCrystal will be given a data attribute called data-crystalValue.
-            // This data attribute will be set equal to the array value.
+            //This data attribute will be set equal to the array value
             image.attr("data-crystalvalue", this.crystalValues[i]);
 
-            // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+            //Lastly, each crystal image (with all it classes and attributes) will get added to the page
             crystals.append(image);
         }
     },
@@ -72,29 +71,11 @@ let game = {
 
         //Generate random values for crystals
         for (let i=0; i < this.crystalImages.length; i++){
-            let value = Math.floor(Math.random() * 13);
+            let value = Math.floor(Math.random() * 12 + 1);
             this.crystalValues.push(value);
             console.log("Value of cyrstal: " + this.crystalValues[i]);
         }
 
-        // //Set variable to crystals div
-        // let crystals = $("#crystals");
-
-        // //Generate img for each crystal
-        // for (let i = 0; i < this.crystalImages.length; i++){
-        //     let image = $("<img>");
-        //     image.addClass("crystal-image");
-
-        //     // Each imageCrystal will be given a src link to the crystal image
-        //     image.attr("src", this.crystalImages[i]);
-
-        //     // Each imageCrystal will be given a data attribute called data-crystalValue.
-        //     // This data attribute will be set equal to the array value.
-        //     image.attr("data-crystalvalue", this.crystalValues[i]);
-
-        //     // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-        //     crystals.append(image);
-        // }
 
     },
 
