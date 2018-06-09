@@ -5,12 +5,9 @@ html, body{
 }
 
 .bg{
-
+    
     background-image: url(../images/hw4background.jpg);
-
-    /* background-size: cover; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
