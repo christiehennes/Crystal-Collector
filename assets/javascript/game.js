@@ -32,18 +32,18 @@ let game = {
         this.displayCrystalImages();
         this.updateScores();
 
-
     },
 
+    //Generate the number the user needs to get to 
     generateTargetNumber: function() {
 
         this.numberToGuess = Math.floor(Math.random() * 102) + 19;
         console.log("Number to guess: " + this.numberToGuess);
         $("#number-to-guess").html(this.numberToGuess);
-
-
+    
     },
 
+    //Function to display the crystal images dynamically 
     displayCrystalImages: function(){
         //Set variable to crystals div
         let crystals = $("#crystals");
@@ -64,6 +64,7 @@ let game = {
         }
     },
 
+    //Generate the values assigned to each crystal and assign them
     generateCrystalValues: function(){
 
         //Clear out previous random crystal values
@@ -75,10 +76,9 @@ let game = {
             this.crystalValues.push(value);
             console.log("Value of cyrstal: " + this.crystalValues[i]);
         }
-
-
     },
 
+    //Update the scores on the page
     updateScores: function(){
 
         $("#wins").html(this.wins);
@@ -87,7 +87,7 @@ let game = {
 
     },
 
-
+    // Perform the addition of crystal values to get the current score 
     addCrystalValue: function(value){
 
         
@@ -112,11 +112,10 @@ let game = {
             this.lostGame();
         }
 
-
     },
 
 
-
+    //Check to see if the user won the game
     wonGame: function(){
 
         this.wins++;
@@ -127,6 +126,7 @@ let game = {
 
     },
 
+    //Check to see if the user lost the game 
     lostGame: function(){
 
         this.losses++;
@@ -140,10 +140,11 @@ let game = {
 }
 
 
+//Originally initalize the game with all original values
 game.initalizeGame();
 
 
-
+//Handle the button click by passing the crystal value to the function to process it 
 $("#crystals").on("click", ".crystal-image", function(){
 
     console.log("Clicked a stone");
