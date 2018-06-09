@@ -81,8 +81,8 @@ let game = {
 
     updateScores: function(){
 
-        $("#wins").html("Wins: " + this.wins);
-        $("#losses").html("Losses: " + this.losses);
+        $("#wins").html(this.wins);
+        $("#losses").html(this.losses);
         $("#current-score").html(this.currentCount);
 
     },
