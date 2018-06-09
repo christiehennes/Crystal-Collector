@@ -11,10 +11,10 @@ let game = {
 
     crystalImages:
     [
-        "./assets/images/crystal1.jpeg",
-        "./assets/images/crystal2.jpeg",
-        "./assets/images/crystal3.jpeg",
-        "./assets/images/crystal4.jpeg",
+        "./assets/images/crystal1.png",
+        "./assets/images/crystal2.png",
+        "./assets/images/crystal3.png",
+        "./assets/images/crystal4.png",
 
     ],
 
