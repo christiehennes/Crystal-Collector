@@ -1,5 +1,7 @@
 # Crystal Collector Game
 
+[Project Link](https://christiehennes.github.io/Crystal-Collector/)
+
 ## Instructions
  
  * When beginning the game, a random number will be generated 
